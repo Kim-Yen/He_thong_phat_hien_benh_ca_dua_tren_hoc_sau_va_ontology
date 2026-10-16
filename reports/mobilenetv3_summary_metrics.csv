@@ -1,0 +1,2 @@
+Model,Test Accuracy,Test Precision (Macro),Test Recall (Macro),Test Macro-F1,Best Val Macro-F1
+mobilenetv3,0.8222222222222222,0.8257547234392114,0.8516815381828065,0.8288293747168929,0.8204484518249439

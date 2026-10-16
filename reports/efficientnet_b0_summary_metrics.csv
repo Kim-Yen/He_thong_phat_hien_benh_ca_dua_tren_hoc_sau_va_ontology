@@ -1,0 +1,2 @@
+Model,Test Accuracy,Test Precision (Macro),Test Recall (Macro),Test Macro-F1,Best Val Macro-F1
+efficientnet_b0,0.8,0.7663243169534388,0.7978874021431348,0.7774825174825175,0.7772978599140389

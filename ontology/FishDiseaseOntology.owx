@@ -1,0 +1,315 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2026/9/untitled-ontology-4"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/user/ontologies/2026/9/untitled-ontology-4">
+    <Prefix name="" IRI="http://www.semanticweb.org/user/ontologies/2026/9/untitled-ontology-4/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#BacterialDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bacterial_Gill_Disease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bacterial_Red_Disease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Epizootic_Ulcerative_Syndrome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FishSpecies"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FungalDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HealthyState"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Healthy_Fish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ParasiticDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pathogen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Prevention"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Symptom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Treatment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WaterCondition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#affectsSpecies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#associatedWithWaterCondition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#causedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPrevention"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSymptom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTreatment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#alkalinityValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ammoniaValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#confidenceScore"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dissolvedOxygenValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nitriteValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pHValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#temperatureValue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EUS_Case_01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Frayed_Gills"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gill_Disease_Case_01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pond_Condition_Sample_01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Red_Disease_Case_01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Skin_Ulcers"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#BacterialDisease"/>
+        <Class IRI="#Disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bacterial_Gill_Disease"/>
+        <Class IRI="#BacterialDisease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bacterial_Red_Disease"/>
+        <Class IRI="#BacterialDisease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Epizootic_Ulcerative_Syndrome"/>
+        <Class IRI="#FungalDisease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FungalDisease"/>
+        <Class IRI="#Disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HealthyState"/>
+        <Class IRI="#Disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Healthy_Fish"/>
+        <Class IRI="#HealthyState"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ParasiticDisease"/>
+        <Class IRI="#Disease"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Epizootic_Ulcerative_Syndrome"/>
+        <NamedIndividual IRI="#EUS_Case_01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptom"/>
+        <NamedIndividual IRI="#Frayed_Gills"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bacterial_Gill_Disease"/>
+        <NamedIndividual IRI="#Gill_Disease_Case_01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WaterCondition"/>
+        <NamedIndividual IRI="#Pond_Condition_Sample_01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bacterial_Red_Disease"/>
+        <NamedIndividual IRI="#Red_Disease_Case_01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptom"/>
+        <NamedIndividual IRI="#Skin_Ulcers"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Red_Disease_Case_01"/>
+        <NamedIndividual IRI="#Skin_Ulcers"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#temperatureValue"/>
+        <NamedIndividual IRI="#Pond_Condition_Sample_01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">30.5</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#affectsSpecies"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#associatedWithWaterCondition"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#causedBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPrevention"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTreatment"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#affectsSpecies"/>
+        <Class IRI="#Disease"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#associatedWithWaterCondition"/>
+        <Class IRI="#Disease"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#causedBy"/>
+        <Class IRI="#Disease"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPrevention"/>
+        <Class IRI="#Disease"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <Class IRI="#Disease"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTreatment"/>
+        <Class IRI="#Disease"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#affectsSpecies"/>
+        <Class IRI="#FishSpecies"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#associatedWithWaterCondition"/>
+        <Class IRI="#WaterCondition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#causedBy"/>
+        <Class IRI="#Pathogen"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPrevention"/>
+        <Class IRI="#Prevention"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <Class IRI="#Symptom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTreatment"/>
+        <Class IRI="#Treatment"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#alkalinityValue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ammoniaValue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#confidenceScore"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#dissolvedOxygenValue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#nitriteValue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#pHValue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#temperatureValue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#alkalinityValue"/>
+        <Class IRI="#WaterCondition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ammoniaValue"/>
+        <Class IRI="#WaterCondition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dissolvedOxygenValue"/>
+        <Class IRI="#WaterCondition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nitriteValue"/>
+        <Class IRI="#WaterCondition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pHValue"/>
+        <Class IRI="#WaterCondition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#temperatureValue"/>
+        <Class IRI="#WaterCondition"/>
+    </DataPropertyDomain>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,2 @@
+Model,Test Accuracy,Test Precision (Macro),Test Recall (Macro),Test Macro-F1,Best Val Macro-F1
+resnet18,0.68,0.6608440170940171,0.6855256948239233,0.6535836442786069,0.6887942116600653
