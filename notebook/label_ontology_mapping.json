@@ -1,0 +1,135 @@
+{
+  "project_metadata": {
+    "project_title": "Xây dựng hệ thống hỗ trợ chẩn đoán bệnh cá kết hợp tri thức Ontology và học máy",
+    "ontology_iri": "http://www.semanticweb.org/fish-disease-ontology#",
+    "ontology_version": "2.0.0",
+    "model_classes_count": 4,
+    "last_updated": "2026-10-20"
+  },
+  "mappings": {
+    "0": {
+      "class_idx": 0,
+      "class_name": "Bacterial Gill Diseases",
+      "vietnamese_name": "Bệnh thối mang do vi khuẩn",
+      "ontology_uri": "http://www.semanticweb.org/fish-disease-ontology#Bacterial_Gill_Disease",
+      "ontology_class": "Bacterial_Gill_Disease",
+      "parent_class_uri": "http://www.semanticweb.org/fish-disease-ontology#BacterialDisease",
+      "pathogen": {
+        "name": "Flavobacterium columnare / Flavobacterium branchiophilum",
+        "uri": "http://www.semanticweb.org/fish-disease-ontology#Flavobacterium_columnare",
+        "type": "Gram-negative filamentous bacteria"
+      },
+      "typical_symptoms": [
+        {
+          "code": "SYM_FRAYED_GILLS",
+          "name": "Mang xơ xác, hoại tử tơ mang",
+          "uri": "http://www.semanticweb.org/fish-disease-ontology#Frayed_Gills"
+        },
+        {
+          "code": "SYM_LETHARGY",
+          "name": "Bơi lờ đờ, nổi đầu tách đàn",
+          "uri": "http://www.semanticweb.org/fish-disease-ontology#Lethargy_Anorexia"
+        }
+      ],
+      "water_risk_triggers": {
+        "dissolved_oxygen_mg_l": "< 3.0",
+        "ammonia_mg_l": "> 0.5",
+        "temperature_celsius": "> 28.0"
+      },
+      "treatments": [
+        "Kháng sinh Oxytetracycline 50-75mg/kg cá hoặc Florfenicol 10mg/kg cá trong 7 ngày liên tục.",
+        "Sát trùng nguồn nước với Iodine 90 (0.4 ppm) hoặc BKC 80% (0.6 ppm)."
+      ],
+      "prevention": "Bật quạt khí ban đêm, thay 20% nước, rải vôi CaCO3 2-3 kg/100m3 để ổn định môi trường."
+    },
+    "1": {
+      "class_idx": 1,
+      "class_name": "Bacterial Red Diseases",
+      "vietnamese_name": "Bệnh đốm đỏ do vi khuẩn",
+      "ontology_uri": "http://www.semanticweb.org/fish-disease-ontology#Bacterial_Red_Disease",
+      "ontology_class": "Bacterial_Red_Disease",
+      "parent_class_uri": "http://www.semanticweb.org/fish-disease-ontology#BacterialDisease",
+      "pathogen": {
+        "name": "Aeromonas hydrophila",
+        "uri": "http://www.semanticweb.org/fish-disease-ontology#Aeromonas_hydrophila",
+        "type": "Gram-negative bacillus bacteria"
+      },
+      "typical_symptoms": [
+        {
+          "code": "SYM_SKIN_ULCERS",
+          "name": "Loét da, xuất huyết gốc vây và thân",
+          "uri": "http://www.semanticweb.org/fish-disease-ontology#Skin_Ulcers"
+        },
+        {
+          "code": "SYM_ABDOMINAL_DISTENSION",
+          "name": "Chướng bụng, hậu môn lồi đỏ",
+          "uri": "http://www.semanticweb.org/fish-disease-ontology#Abdominal_Distension"
+        }
+      ],
+      "water_risk_triggers": {
+        "ammonia_mg_l": "> 0.8",
+        "nitrite_mg_l": "> 0.2",
+        "turbidity_secchi_cm": "< 20.0"
+      },
+      "treatments": [
+        "Kháng sinh Oxytetracycline trộn vào thức ăn đúng liều lượng 5-7 ngày theo chỉ định.",
+        "Tắm cá trong dung dịch thuốc tím KMnO4 2-4 ppm trong 30 phút hoặc rải BKC sát trùng đáy ao."
+      ],
+      "prevention": "Giảm mật độ nuôi, định kỳ nạo vét bùn đáy, bổ sung Vitamin C và khoáng chất tăng đề kháng."
+    },
+    "2": {
+      "class_idx": 2,
+      "class_name": "Epizootic Ulcerative Syndrome (EUS)",
+      "vietnamese_name": "Hội chứng lở loét dịch tễ (EUS)",
+      "ontology_uri": "http://www.semanticweb.org/fish-disease-ontology#Epizootic_Ulcerative_Syndrome",
+      "ontology_class": "Epizootic_Ulcerative_Syndrome",
+      "parent_class_uri": "http://www.semanticweb.org/fish-disease-ontology#FungalDisease",
+      "pathogen": {
+        "name": "Aphanomyces invadans",
+        "uri": "http://www.semanticweb.org/fish-disease-ontology#Aphanomyces_invadans",
+        "type": "Oomycete / Water mold (Thủy khuẩn)"
+      },
+      "typical_symptoms": [
+        {
+          "code": "SYM_SKIN_ULCERS",
+          "name": "Vết loét sâu ăn vào cơ thịt, u hạt viêm lan rộng",
+          "uri": "http://www.semanticweb.org/fish-disease-ontology#Skin_Ulcers"
+        },
+        {
+          "code": "SYM_LETHARGY",
+          "name": "Bơi lờ đờ, mất phương hướng ở tầng mặt",
+          "uri": "http://www.semanticweb.org/fish-disease-ontology#Lethargy_Anorexia"
+        }
+      ],
+      "water_risk_triggers": {
+        "temperature_celsius": "< 25.0",
+        "ph_value": "< 6.5",
+        "dissolved_oxygen_mg_l": "< 3.5"
+      },
+      "treatments": [
+        "Tắm nước muối NaCl 2-3% trong 5-10 phút để sát trùng bề mặt vết loét.",
+        "Tạt sát trùng nguồn nước với Iodine 90 (0.3-0.5 ppm) hoặc Formalin nồng độ an toàn."
+      ],
+      "prevention": "Giữ ấm nước ao vào mùa lạnh, rải vôi nâng pH > 7.0, cách ly cá bệnh để tránh lây lan diện rộng."
+    },
+    "3": {
+      "class_idx": 3,
+      "class_name": "Healthy Fish",
+      "vietnamese_name": "Cá khỏe mạnh",
+      "ontology_uri": "http://www.semanticweb.org/fish-disease-ontology#Healthy_Fish",
+      "ontology_class": "Healthy_Fish",
+      "parent_class_uri": "http://www.semanticweb.org/fish-disease-ontology#HealthyState",
+      "pathogen": null,
+      "typical_symptoms": [
+        {
+          "code": "SYM_NORMAL",
+          "name": "Hành vi và ngoại hình bình thường, phản xạ nhanh nhẹn",
+          "uri": "http://www.semanticweb.org/fish-disease-ontology#Normal_Behavior_Appearance"
+        }
+      ],
+      "water_risk_triggers": {},
+      "treatments": [],
+      "prevention": "Duy trì chế độ dinh dưỡng cân đối và kiểm soát các chỉ số chất lượng nước ao định kỳ."
+    }
+  }
+}

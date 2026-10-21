@@ -1,5 +1,43 @@
-data/ 
-models/ 
-*.h5 
-*.pt 
-*.pkl 
+# ==========================================
+# GITIGNORE - HỆ THỐNG CHẨN ĐOÁN BỆNH CÁ
+# ==========================================
+
+# 1. Dữ liệu hình ảnh thô và tệp trung gian (Dataset)
+data/raw/
+data/processed/
+data/*.zip
+data/*.tar.gz
+audit_phash_samples/
+
+# 2. Checkpoints trọng số mô hình lớn (Weights)
+models/*.pt
+models/*.pth
+models/*.pkl
+models/*.h5
+models/*.onnx
+# Giữ lại tệp cấu hình JSON nhỏ trong models
+!models/class_to_idx.json
+
+# 3. Python & Jupyter caches
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+*/*/.ipynb_checkpoints/
+
+# 4. Môi trường ảo (Virtual Environments)
+env/
+venv/
+.env
+.venv/
+conda-env/
+
+# 5. Tệp tạm của hệ thống và phần mềm soạn thảo (Word / OS)
+~$*.docx
+~$*.doc
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
