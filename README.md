@@ -79,19 +79,21 @@ flowchart TD
 * **Số lượng ảnh gốc:** 2.137 ảnh thuộc 4 lớp.
 * **Quy trình làm sạch dữ liệu nghiêm ngặt:**
   1. Quét loại bỏ ảnh hỏng, kiểm tra định dạng và cấu trúc specimen.
-  2. Áp dụng thuật toán **Perceptual Hashing (pHash)** với ngưỡng Hamming Distance $\le 6$ để loại bỏ **936 ảnh trùng lặp/gần trùng**.
+  2. Áp dụng thuật toán **Perceptual Hashing (pHash)** với ngưỡng khoảng cách Hamming $\le 5$ để loại bỏ **936 ảnh trùng lặp/gần trùng** (near-duplicate).
   3. Dữ liệu làm sạch còn lại: **1.201 ảnh chất lượng cao**.
-  4. Phân chia tập dữ liệu theo cá thể mẫu (**Specimen-aware Stratified Split**) tỷ lệ 70% Train (863 ảnh) / 15% Validation (113 ảnh) / 15% Test (225 ảnh), đảm bảo tuyệt đối không rò rỉ dữ liệu cùng cá thể giữa các tập:
+  4. Phân chia tập dữ liệu theo cá thể mẫu (**Specimen-aware Stratified Split**) tỷ lệ 70% Train (863 ảnh) / 15% Validation (113 ảnh) / 15% Test (225 ảnh), đảm bảo không rò rỉ dữ liệu cùng cá thể giữa các tập:
      $$\text{Specimens}_{\text{Train}} \cap \text{Specimens}_{\text{Val}} = \emptyset, \quad \text{Specimens}_{\text{Train}} \cap \text{Specimens}_{\text{Test}} = \emptyset$$
 
-### Phân bố 4 Lớp Chẩn đoán:
-| STT | Tên lớp bệnh (English) | Tên tiếng Việt | Tác nhân chính | Số lượng ảnh sạch |
-| :---: | :--- | :--- | :--- | :---: |
-| 0 | **Bacterial Gill Diseases (BGD)** | Bệnh thối mang do vi khuẩn | *Flavobacterium columnare* | 157 |
-| 1 | **Bacterial Red Diseases (BRD)** | Bệnh đốm đỏ do vi khuẩn | *Aeromonas hydrophila* | 377 |
-| 2 | **Epizootic Ulcerative Syndrome (EUS)** | Hội chứng lở loét dịch tễ | *Aphanomyces invadans* (Oomycete) | 177 |
-| 3 | **Healthy Fish** | Cá khỏe mạnh | Trạng thái bình thường | 490 |
-| **Tổng** | | | | **1.201** |
+### Phân bố 4 Lớp Chẩn đoán và 3 Loài cá:
+* **4 Lớp bệnh lý:**
+  - **Bacterial Gill Diseases (BGD):** 157 ảnh (*Flavobacterium columnare*)
+  - **Bacterial Red Diseases (BRD):** 377 ảnh (*Aeromonas hydrophila*)
+  - **Epizootic Ulcerative Syndrome (EUS):** 177 ảnh (*Aphanomyces invadans* - Oomycete)
+  - **Healthy Fish:** 490 ảnh (Trạng thái bình thường)
+* **3 Loài cá thực tế trong bộ dữ liệu (cung cấp đầy đủ trên cả 4 lớp bệnh, bao gồm nhóm EUS):**
+  - **Cá trôi Ấn Độ - Rui / Rohu (*Labeo rohita*):** 529 ảnh (44.05%) — trong đó EUS: 104 ảnh, BRD: 171 ảnh, BGD: 54 ảnh, Healthy: 200 ảnh.
+  - **Cá trắm cỏ - Grass carp (*Ctenopharyngodon idella*):** 349 ảnh (29.06%) — trong đó EUS: 55 ảnh, BRD: 119 ảnh, BGD: 52 ảnh, Healthy: 123 ảnh.
+  - **Cá mè trắng - Silver carp (*Hypophthalmichthys molitrix*):** 323 ảnh (26.89%) — trong đó EUS: 18 ảnh, BRD: 87 ảnh, BGD: 51 ảnh, Healthy: 167 ảnh.
 
 ---
 
